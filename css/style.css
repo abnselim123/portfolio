@@ -8,7 +8,9 @@
     list-style-type: none;
     font-family: "Inter",sans-serif;
 }
-
+@media screen and (max-width: 767px){
+    
+}
 :root{
     --main_color:#1df356;
     --p_color:#8a8a8a;
@@ -486,24 +488,7 @@ header nav .icons a:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-.contact form .inpts_form input,
-.contact form .inpts_form textarea{
-    border-radius: 5px;
-    padding: 20px;
-    outline: none;
-    background-color: var(--bg_color);
-    color: white;
-    margin-bottom: 30px;
-    border: 1px solid var(--border-color);
-    transition: 0.3s;
-}
-
-.contact form .inpts_form input{
-    width: 48%;
-}
-.contact form .inpts_form textarea{
-    width: 100%;
+                                                                                                                                       
 }
 
 .contact form .inpts_form input:focus,
