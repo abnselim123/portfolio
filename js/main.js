@@ -156,8 +156,8 @@ function toggleMenu() {
     if (backdrop) {
         backdrop.classList.toggle('active', isOpen);
     }
+    document.body.classList.toggle('menu-open', isOpen);
 
-    // Toggle scroll lock on mobile
     if (isOpen) {
         document.body.style.overflow = 'hidden';
     } else {
@@ -171,6 +171,7 @@ function closeMenuOnNav() {
     if (navLinks && navLinks.classList.contains('active')) {
         navLinks.classList.remove('active');
         if (backdrop) backdrop.classList.remove('active');
+        document.body.classList.remove('menu-open');
         document.body.style.overflow = '';
     }
 }
@@ -361,7 +362,7 @@ function initResponsiveHelpers() {
     });
 
     window.addEventListener('resize', () => {
-        if (window.innerWidth > 860) {
+        if (window.innerWidth > 992) {
             closeMenuOnNav();
         }
     }, { passive: true });
