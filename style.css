@@ -1,0 +1,5 @@
+/**
+ * Mohamed Ali Portfolio - Main Stylesheet Proxy
+ * Imports the modular stylesheet from css/style.css
+ */
+@import url("css/style.css");
